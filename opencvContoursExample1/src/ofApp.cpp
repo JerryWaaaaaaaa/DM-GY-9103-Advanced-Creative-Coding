@@ -57,7 +57,7 @@ void ofApp::draw(){
 	ofSetHexColor(0xffffff);
 	ofPushMatrix();
 	ofTranslate(ofGetWidth()/2 - colorImg.getWidth()/2,ofGetHeight()/2 - colorImg.getHeight()/2);
-	colorImg.draw(0,0);
+	grayBg.draw(0,0);
 	
 	//if we want to draw an outline around our blob path
 	ofNoFill();

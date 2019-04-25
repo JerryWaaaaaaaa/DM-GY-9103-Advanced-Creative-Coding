@@ -27,6 +27,7 @@ void ofApp::update(){
 
 	vidPlayer.update();
 	bNewFrame = vidPlayer.isFrameNew();
+    cout << bNewFrame << endl;
 
 	if (bNewFrame){
 

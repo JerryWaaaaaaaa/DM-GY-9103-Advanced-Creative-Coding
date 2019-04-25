@@ -7,7 +7,7 @@ void ofApp::setup(){
 	mColorImage.allocate(320, 240);
 	mGrayscaleImage.allocate(320, 240);
 	
-	mBall.checkIntersects(ofVec2f(2.4f));
+	//mBall.checkIntersects(ofVec2f(2.4f));
 }
 
 //--------------------------------------------------------------
