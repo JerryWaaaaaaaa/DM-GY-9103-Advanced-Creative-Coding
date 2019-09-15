@@ -24,7 +24,7 @@ void ofApp::draw(){
 	if( oneShot ){
 		ofBeginSaveScreenAsPDF("screenshot-"+ofGetTimestampString()+".pdf", false);
 	}
-	
+	  
 	ofSetColor(54);
 	if( pdfRendering ){
 		ofDrawBitmapString("press r to stop pdf multipage rendering", 32, 92);

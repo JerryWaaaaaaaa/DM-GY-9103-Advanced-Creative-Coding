@@ -70,7 +70,14 @@ void ofApp::draw(){
 		//each of our blobs contains a vector<ofPoints> pts
 		for(int j=0; j < contourFinder.blobs[i].pts.size(); j++){
 			ofVertex(contourFinder.blobs[i].pts[j].x, contourFinder.blobs[i].pts[j].y);
+            
 		}
+    
+        ofRectangle box = contourFinder.blobs[i].boundingRect;
+        ofNoFill();
+        ofSetColor(255);
+        ofDrawRectangle(box.getX(), box.getY(), box.getWidth(), box.getHeight());
+        
 	}
 	
 	/*
